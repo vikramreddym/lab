@@ -1,0 +1,652 @@
+09:00:10 From Carlos Capote to Everyone:
+	This group is an absolute success .Thanks Santiago for organazing it!
+09:01:57 From christopher-bonnett to Everyone:
+	Thank you for organising  !
+09:02:30 From kaili_win to Everyone:
+	that's crazy
+09:02:37 From Nazari to Everyone:
+	Reacted to "that's crazy" with 🎉
+09:03:48 From Nazari to Everyone:
+	im here for stupid questions 😄
+09:04:55 From Hegemon to Everyone:
+	🙌 Cool
+09:07:02 From natevictorlee to Everyone:
+	question: why is pretraining expensive? 		by expensive, what do we mean in computation sense? 		note: early gpt costs 7 mill usd for pretrain
+09:08:24 From jcrg to Everyone:
+	data quality
+09:08:29 From natethegreat to Everyone:
+	larger parameters
+09:08:33 From natethegreat to Everyone:
+	from what I heard
+09:08:54 From Uneet Kumar Singh to Everyone:
+	More parameter
+	Architectural Improvmeents
+	Better Data
+09:09:01 From Rod to Everyone:
+	Reacted to "More parameter
+	Archi..." with 👍
+09:09:11 From Aditya to Everyone:
+	Because it is trained on internet scale data (in the range of trillions of tokens). Secondly the model itself is very huge (billions of parameters used).
+09:09:19 From natethegreat to Everyone:
+	just curious how openai team or meta team do their data cleaning
+09:09:19 From Hegemon to Everyone:
+	And improvements in training techniques
+09:09:39 From Hreetam Paul to Everyone:
+	wont fine tuning also consist of prompt engineering?
+09:09:50 From natethegreat to Everyone:
+	because in the book, the author talks abouts tokenization and BPE, etc.
+09:09:53 From Hegemon to Everyone:
+	Prompt Engineering is an inference technique. Supervised Fine-tuning is the next-step after Pretraining 
+09:10:02 From imai to Everyone:
+	Replying to "wont fine tuning als..."
+	
+	it does
+09:10:19 From likhith to Everyone:
+	can I know the name of this book? chip huyen's one
+09:10:26 From Naveen to Everyone:
+	Here is the chatgpt 4 paper https://cdn.openai.com/papers/gpt-4.pdf
+09:10:51 From likhith to Everyone:
+	Reacted to "Here is the chatgpt ..." with 👍
+09:10:52 From Nazari to Everyone:
+	Reacted to "Here is the chatgpt ..." with 👍
+09:11:27 From Michael Erasmus to Everyone:
+	https://huyenchip.com/2023/05/02/rlhf.html
+09:11:38 From Jake Maymar to Everyone:
+	Reacted to "https://huyenchip.co..." with 👍
+09:11:40 From Vignesh to Everyone:
+	Reacted to "https://huyenchip.co..." with 👍
+09:11:44 From likhith to Everyone:
+	Reacted to "https://huyenchip.co..." with 👍
+09:11:50 From Hegemon to Everyone:
+	question: why is pretraining expensive? 
+	
+	by expensive, what do we mean in computation sense? 
+	
+	note: early gpt costs 7 mill usd for pretrain
+	 
+	The data required for pre-training is humongous compared to SFT.
+09:12:00 From Mashruk to Everyone:
+	Reacted to "Here is the chatgpt ..." with 👍
+09:12:13 From Rito Ghosh to Everyone:
+	https://huggingface.co/blog/rlhf
+09:12:20 From natethegreat to Everyone:
+	Reacted to "question: why is pre..." with 👍
+09:12:48 From natethegreat to Everyone:
+	Replying to "question: why is pre..."
+	
+	question: why is pretraining expensive? 		by expensive, what do we mean in computation sense? 		note: early gpt costs 7 mill usd for pretrain	 	The data required for pre-training is humongous compared to SFT.	assuming most of the cost is to computing then, aka GPU powered cluster
+09:13:44 From natethegreat to Everyone:
+	a github repo will help
+09:14:05 From imai to Everyone:
+	what does parameter mean in 70B parameter model?
+09:14:16 From Andres Castillo to Everyone:
+	Are the pre-trained models useful for any specific task beyond fine-tunning? or is just a model that predicts the next word?
+09:14:33 From Srivathsan M to Everyone:
+	Replying to "what does parameter ..."
+	
+	Just the weights and biases
+09:14:35 From Naveen to Everyone:
+	I guess replicate on a GitHub repo and share 🙂 a kind of accountability between ourselves
+09:14:35 From likhith to Everyone:
+	Reacted to "a github repo will h..." with 👍
+09:14:52 From natethegreat to Everyone:
+	Reacted to "I guess replicate on..." with 👍
+09:14:54 From likhith to Everyone:
+	Reacted to "I guess replicate on..." with 👍
+09:14:59 From Naveen to Everyone:
+	Reacted to "a github repo will h..." with 👍
+09:15:11 From imai to Everyone:
+	Reacted to "Just the weights and..." with 👍
+09:15:13 From Carlos Capote to Everyone:
+	Sebastian Rascka also has a Github repository for the book: https://github.com/rasbt/LLMs-from-scratch
+09:15:25 From Naveen to Everyone:
+	Reacted to "Sebastian Rascka als..." with 👍
+09:15:36 From OptimizedEuler to Everyone:
+	he starts from autograd
+09:15:40 From imai to Everyone:
+	Replying to "what does parameter ..."
+	
+	can you explain more please
+09:15:43 From josecaloca to Everyone:
+	Replying to "what does parameter ..."
+	
+	These are the weights to optimise during NN training. You can have a look at this video 		https://www.youtube.com/watch?v=wjZofJX0v4M&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&index=5
+09:16:13 From Uneet Kumar Singh to Everyone:
+	just curious how openai team or meta team do their data cleaning
+	They are professional data preparations pipelines. 
+	https://time.com/6247678/openai-chatgpt-kenya-workers/ 
+	
+	There are also conjectures most companies have overlap in their source of training data and hence you see similar behaviour across llms for similar prompts.
+09:16:18 From natethegreat to Everyone:
+	I think we can just maintain the codebase on our own. But if there's something interesting or wanted to build anything cool opensource based off the book or others, we can open source it everyone
+09:16:21 From imai to Everyone:
+	Replying to "Are the pre-trained ..."
+	
+	pre-training is just a first stage, not really useful apart from using it for research
+09:16:42 From natethegreat to Everyone:
+	Reacted to "just curious how ope..." with 👍
+09:17:03 From Menan Velayuthan to Everyone:
+	https://www.youtube.com/watch?v=zduSFxRajkE&t=2106s 	Andrej's video on BPE
+09:17:16 From Srivathsan M to Everyone:
+	Replying to "https://www.youtube...."
+	
+	Thankss
+09:17:23 From Andres Castillo to Everyone:
+	Replying to "Are the pre-trained ..."
+	
+	Thanks!
+09:17:50 From josecaloca to Everyone:
+	Reacted to "Sebastian Rascka als..." with 👍
+09:17:58 From imai to Everyone:
+	Replying to "what does parameter ..."
+	
+	thanks
+09:18:11 From Michael Erasmus to Everyone:
+	The first time I really understood what a NN does was with Karpathy’s videos
+09:18:22 From natethegreat to Everyone:
+	Reacted to "The first time I rea..." with 👍
+09:18:24 From Hreetam Paul to Everyone:
+	Reacted to "The first time I rea..." with 👍
+09:18:33 From Jake Maymar to Everyone:
+	Reacted to "These are the weight..." with 👍
+09:18:40 From Jake Maymar to Everyone:
+	Reacted to "https://www.youtube...." with 👍
+09:19:18 From jcrg to Everyone:
+	Can you send the link @josecaloca ?
+09:19:18 From jcrg to Everyone:
+	[This is an encrypted message]
+09:19:27 From Hreetam Paul to Everyone:
+	I think apart from this, we also need to hone our mathematical intuition
+09:19:28 From natethegreat to Everyone:
+	MICROGRAD, where did we get this notebook?
+09:19:30 From Naveen to Everyone:
+	Reacted to "I think we can just ..." with 👍
+09:19:39 From Hreetam Paul to Everyone:
+	Replying to "Can you send the lin..."
+	
+	karpathy?
+09:19:48 From likhith to Everyone:
+	If anyone of u have time and can put a lot of work, then CMU deep learning course is the best. its a very  hard course, u can just find the entire course on youtube, just search CMU deep learning u will get the channel
+09:19:55 From Srivathsan M to Everyone:
+	Replying to "Can you send the lin..."
+	
+	https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi
+09:20:02 From Mash (Miami) to Everyone:
+	Reacted to "If anyone of u have ..." with 👍
+09:20:02 From Srivathsan M to Everyone:
+	Replying to "Can you send the lin..."
+	
+	3B1B playlist
+09:20:07 From jcrg to Everyone:
+	Replying to "MICROGRAD, where d..."
+	
+	Its from karpathy's series of video
+09:20:18 From Michael Erasmus to Everyone:
+	Replying to "what does parameter ..."
+	
+	It might be helpful to go through Appendix A to understand NN parameters
+09:20:26 From natethegreat to Everyone:
+	If anyone of u have time and can put a lot of work, then CMU deep learning course is the best. its a very  hard course, u can just find the entire course on youtube, just search CMU deep learning u will get the channel	can we submit the homework on the course?
+09:20:31 From likhith to Everyone:
+	Reacted to "If anyone of u have ..." with ❤️
+09:20:41 From natethegreat to Everyone:
+	It would be nice if we can go thru the project tho
+09:20:41 From Mash (Miami) to Everyone:
+	Reacted to "If anyone of u have ..." with 👎
+09:20:58 From natethegreat to Everyone:
+	Reacted to "Its from karpathy's ..." with 👍
+09:20:59 From jcrg to Everyone:
+	Replying to "MICROGRAD, where d..."
+	
+	https://www.google.com/search?q=karpathy's+micrograd&oq=karpathys+mic&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:60640241,vid:VMj-3S1tku0,st:0
+09:21:02 From natethegreat to Everyone:
+	Replying to "MICROGRAD, where did..."
+	
+	tks
+09:21:35 From Rito Ghosh to Everyone:
+	Replying to "Can you send the lin..."
+	
+	https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi
+09:22:44 From natethegreat to Everyone:
+	all llm are basically built on this, right?
+09:23:17 From imai to Everyone:
+	Replying to "If anyone of u have ..."
+	
+	is it this course?
+09:23:41 From Srivathsan M to Everyone:
+	Replying to "If anyone of u have ..."
+	
+	its a channel i think..i just googled
+09:23:45 From likhith to Everyone:
+	Reacted to "If anyone of u have ..." with 👎
+09:23:47 From likhith to Everyone:
+	Removed a 👎 reaction from "If anyone of u have ..."
+09:24:02 From Ahmed to Everyone:
+	Each architecture are good in certain tasks, we can’t dismiss or say something is not use
+09:24:03 From imai to Everyone:
+	Replying to "If anyone of u have ..."
+	
+	alright
+09:24:10 From Srivathsan M to Everyone:
+	Replying to "If anyone of u have ..."
+	
+	https://www.youtube.com/channel/UC8hYZGEkI2dDO8scT8C5UQA
+09:24:30 From likhith to Everyone:
+	Replying to "If anyone of u have ..."
+	
+	yea the course is uploaded for free on youtube, there is a course wensite where u can get some additional materials
+09:24:42 From natethegreat to Everyone:
+	Replying to "If anyone of u have ..."
+	
+	https://deeplearning.cs.cmu.edu/F24/index.html
+09:25:08 From likhith to Everyone:
+	Reacted to "https://deeplearning..." with 👍
+09:25:10 From Naveen to Everyone:
+	encoder-only is for understanding/classification whereas decoder-only has generation aspect
+09:25:12 From natethegreat to Everyone:
+	do you guys/ladies know which one is llama based on?
+09:25:28 From Hreetam Paul to Everyone:
+	meta ai
+09:25:52 From Hegemon to Everyone:
+	Replying to "do you guys/ladies k..." 
+	
+	 Most LLMs are decoder-only
+09:26:13 From natethegreat to Everyone:
+	Reacted to "Most LLMs are decode..." with 👍
+09:26:41 From likhith to Everyone:
+	Reacted to "Most LLMs are decode..." with 👍
+09:26:56 From Michael Erasmus to Everyone:
+	Bert has a smaller footprint, so it can be very good for classification if you fine-tune it
+09:29:32 From Naveen to Everyone:
+	Which page/ section is this directionality aspect covered? am a bit lost :)
+09:29:32 From Matorrixo to Everyone:
+	So for each token generation, you look at all the current words. Thus the embeddings of the each token are changing a bit as we generate the text.
+09:30:01 From Andres Castillo to Everyone:
+	I'm confused because my understanding is that in the GPT arch the objective is to predict the next word whereas in BERT is to "fill in the middle",so can BERT be used for task like generate text or just classify it?
+09:31:35 From Hegemon to Everyone:
+	Replying to "I'm confused because..." 
+	
+	 BERT isn't so suitable for generating text
+09:31:47 From Hreetam Paul to Everyone:
+	to put it simply BERT is like some1 who understand the behind the scene stuff like sentiment and others are self explanatory apart from generating anything
+09:32:06 From Robin to Everyone:
+	Replying to "I'm confused because..." 
+	
+	 I also think by it filling the gap their is some aspects of generation (generating the gaps next posible word )
+09:32:29 From Hegemon to Everyone:
+	Replying to "Which page/ section ..." 
+	
+	 It isn't. Maybe a bit.
+09:32:30 From Aditya to Everyone:
+	Oh, I thought that once we generate the nth token, only the nth token is fed back to generate the n+1 th token. This means the other token embeddings won’t change right.
+09:33:47 From ゲスト to Everyone:
+	BERT B is bidirectional, the input is provided twice, from left to right, and from right to left
+09:35:09 From Robin to Everyone:
+	I think the biggest gap in my  understanding is the logic for BERT as compared to GPT
+09:35:43 From Srivathsan M to Everyone:
+	Thanks that cleared it up
+09:36:05 From Aditya to Everyone:
+	Replying to "I think the biggest ..."
+	
+	I think the simplest way to understand is BERT is train to fill in the blanks. GPT is trained to continue generating text.
+09:36:23 From natethegreat to Everyone:
+	Reacted to "I think the simplest..." with 👍
+09:36:34 From natethegreat to Everyone:
+	Replying to "I think the biggest ..."
+	
+	clear analogy
+09:37:06 From natethegreat to Everyone:
+	https://bbycroft.net/llm
+09:37:09 From Robin to Everyone:
+	Reacted to I think the simplest... with "👍"
+09:37:11 From natethegreat to Everyone:
+	santi
+09:37:28 From natethegreat to Everyone:
+	you can open this and try to explain some parts relating to ch1 and ch2
+09:37:34 From jcrg to Everyone:
+	Reacted to "https://bbycroft.n..." with 👍
+09:37:48 From Philippe Robert to Everyone:
+	Reacted to "I think the simplest..." with 👍
+09:37:58 From Robin to Everyone:
+	Reacted to https://bbycroft.net... with "👍"
+09:38:06 From Aditya to Everyone:
+	Reacted to "https://bbycroft.net..." with 👍
+09:38:12 From Naveen to Everyone:
+	Reacted to "https://bbycroft.net..." with 👍
+09:38:37 From Hreetam Paul to Everyone:
+	last 3 video of 3B1B will explain the llm part but you should start from video 1
+09:38:44 From natethegreat to Everyone:
+	Reacted to "last 3 video of 3B1B..." with 👍
+09:38:51 From Hreetam Paul to Everyone:
+	Reacted to "last 3 video of 3B1B..." with 👍
+09:38:54 From Hreetam Paul to Everyone:
+	Removed a 👍 reaction from "last 3 video of 3B1B..."
+09:38:58 From Hreetam Paul to Everyone:
+	Reacted to "https://bbycroft.net..." with 👍
+09:39:25 From Jake Maymar to Everyone:
+	Reacted to "https://bbycroft.net..." with 👍
+09:40:03 From Mash (Miami) to Everyone:
+	Reacted to "https://bbycroft.net..." with 👍
+09:40:12 From Alexandru Barbu to Everyone:
+	not sure if I ought to wait for the end of the presentation, but I am interested in how are you able to asses how big in terms of number of parameters do you have to build the model if you want to use it with one vertical - say programming in C? I would assume that there ought to be a connection between the parameter number and the size of the dataset. Going further, for the interaction, one would probably use existing llama3.1 weights probably and build on that. How does one go about it?
+09:40:22 From Menan Velayuthan to Everyone:
+	Transformer Interpretability	https://arena3-chapter1-transformer-interp.streamlit.app/
+09:40:31 From Aditya to Everyone:
+	Reacted to "Transformer Interpre..." with 👍
+09:40:36 From josecaloca to Everyone:
+	Reacted to "Transformer Interpre..." with 👍
+09:40:41 From jcrg to Everyone:
+	Reacted to "Transformer Interp..." with 👍
+09:41:31 From Michael Erasmus to Everyone:
+	That is cool
+09:42:39 From Srivathsan M to Everyone:
+	Replying to "not sure if I ought ..."
+	
+	Actually, i think the parameters are more related to the model architecture than the training data. 	and as far as the llama and using it to further build, you can just import it in your pipeline architecture and start fine tuning it
+09:43:15 From Michael Erasmus to Everyone:
+	Technically it’s the position of the token in the context window right?
+09:43:19 From Hreetam Paul to Everyone:
+	Menan, that’s awesome
+09:43:43 From Hreetam Paul to Everyone:
+	can anyone suggest me some pdf and utube series to develop mathematical intuition
+09:44:06 From Srivathsan M to Everyone:
+	couresera's math for ml is the one i used. can vouch for it
+09:44:33 From Menan Velayuthan to Everyone:
+	Reacted to "Menan, that’s awesom..." with 👍
+09:44:35 From Alexandru Barbu to Everyone:
+	Replying to "not sure if I ought ..."
+	
+	yes, but the bigger the model, the more resources you need. pretty much I am looking to identify the smallest model that will do the trick. that is what I am looking for.
+09:44:36 From Hreetam Paul to Everyone:
+	accha
+	nothing on youtube?
+	thanks
+09:44:42 From Vikram to Everyone:
+	Replying to "couresera's math for..."
+	
+	by deeplearning.ai or the other one?
+09:44:50 From Srivathsan M to Everyone:
+	Replying to "couresera's math for..."
+	
+	deeplearning one
+09:44:58 From Hreetam Paul to Everyone:
+	Replying to "couresera's math for..."
+	
+	accha
+09:45:39 From Aditya to Everyone:
+	Replying to "can anyone suggest m..."
+	
+	3b1b and Statquest’s videos are some of the best on this matter. Especially 3b1b’s Linear Algebra playlist.
+09:45:54 From Hreetam Paul to Everyone:
+	Replying to "couresera's math for..."
+	
+	https://www.deeplearning.ai/courses/mathematics-for-machine-learning-and-data-science-specialization/ 
+	this?
+09:45:57 From natethegreat to Everyone:
+	Reacted to "3b1b and Statquest’s..." with 👏
+09:45:59 From Srivathsan M to Everyone:
+	Reacted to "https://www.deeplear..." with 👍
+09:46:46 From Aditya to Everyone:
+	Reacted to "https://www.deeplear..." with 👍
+09:46:59 From natethegreat to Everyone:
+	Replying to "can anyone suggest m..."
+	
+	I think if you are serious about learning. 		I plan to go over linear algebra from MIT. I would welcome a study-buddy, if you want to study together.
+09:47:07 From Menan Velayuthan to Everyone:
+	https://medium.com/@raniahossam/chinchilla-scaling-laws-for-large-language-models-llms-40c434e4e1c1 	This is closest work i know relating to parameter and data size
+09:47:22 From Naveen to Everyone:
+	this visualization of transformer internal flow was super helpful for me https://poloclub.github.io/transformer-explainer/
+09:47:25 From Edy Dulharu to Everyone:
+	https://medium.com/@raniahossam/chinchilla-scaling-laws-for-large-language-models-llms-40c434e4e1c1
+09:47:25 From Aditya to Everyone:
+	Replying to "Technically it’s the..."
+	
+	Yes, I think so too
+09:47:40 From Aditya to Everyone:
+	Reacted to "https://medium.com/@..." with 👍
+09:47:42 From Aditya to Everyone:
+	Reacted to "this visualization o..." with 👍
+09:48:02 From Aditya to Everyone:
+	Reacted to "https://medium.com/@..." with 👍
+09:48:11 From Naveen to Everyone:
+	Reacted to "I think if you are s..." with 👍
+09:48:22 From Naveen to Everyone:
+	Replying to "can anyone suggest m..."
+	
+	let us connect on discord
+09:48:31 From Carlos Capote to Everyone:
+	Replying to "this visualization o..."
+	
+	Useful and beautiful aswell!
+09:48:49 From Aditya to Everyone:
+	Reacted to "I think if you are s..." with 👍
+09:49:11 From Robin to Everyone:
+	Reacted to this visualization o... with "👍"
+09:49:29 From Srivathsan M to Everyone:
+	Replying to "this visualization o..."
+	
+	So pleasing to look at🥹
+09:49:35 From natethegreat to Everyone:
+	Replying to "can anyone suggest m..."
+	
+	hell yeah, we can check on each other on the progress. I am serious about learning. I am planing to take one month or two on math before my online classes start for my ml program
+09:49:57 From Aditya to Everyone:
+	Replying to "can anyone suggest m..."
+	
+	Sure, sounds good @natethegreat
+09:50:06 From natethegreat to Everyone:
+	Reacted to "Sure, sounds good @n..." with 👍
+09:51:29 From Naveen to Everyone:
+	Replying to "can anyone suggest m..."
+	
+	I have heard good things about this one: https://www.mathacademy.com/courses/mathematics-for-machine-learning
+09:51:48 From Jake Maymar to Everyone:
+	Reacted to "this visualization o..." with 👍
+09:51:49 From Naveen to Everyone:
+	Reacted to "hell yeah, we can ch..." with 👍
+09:54:09 From Hreetam Paul to Everyone:
+	Replying to "can anyone suggest m..."
+	
+	I dont mind being study buddy but lets settle on a maths course apart from LLM! I think youtube one would be nice ?
+09:54:14 From Hreetam Paul to Everyone:
+	Replying to "can anyone suggest m..."
+	
+	3B1B
+09:54:22 From Hreetam Paul to Everyone:
+	Reacted to "I think if you are s..." with 👍
+09:54:28 From Hreetam Paul to Everyone:
+	Reacted to "let us connect on di..." with 👍
+09:54:36 From natethegreat to Everyone:
+	Replying to "can anyone suggest m..."
+	
+	honestly, most of the math required are linear alg and some calculus from what I gathered. 		stat/probabity too. but linear algebra takes up a bit portion. 		I will try to come up with a study plan based off the site you shared.
+09:54:52 From Srivathsan M to Everyone:
+	Replying to "can anyone suggest m..."
+	
+	i'll join too if that's fine?
+09:54:54 From Rod to Everyone:
+	Replying to "can anyone suggest m..."
+	
+	https://mathacademy.com/  has a M4ML stream that is useful
+09:55:04 From Naveen to Everyone:
+	Reacted to "honestly, most of th..." with 👍
+09:55:31 From Valerio to Everyone:
+	I'd kindly ask someone on a pc if they could compile a list of all of these links and post it in the discord? That would be greatly helpful :)
+09:55:34 From Hreetam Paul to Everyone:
+	Replying to "can anyone suggest m..."
+	
+	yea that would be nice and another thing i heard, ML ALGO like linear regression etc has their underlying mathematical stuff, understanding those would be nice too
+09:56:11 From natethegreat to Everyone:
+	Replying to "can anyone suggest m..."
+	
+	3B1B	this is a good visual which provides decent intro. But if you look at the code in the book. I had a lot of questions relating t the linear alg function calls and the parameters used. These are basically math questions.
+09:57:46 From Hreetam Paul to Everyone:
+	Replying to "can anyone suggest m..."
+	
+	yea so we connect on discord?
+	name here is chifi
+09:58:09 From Khullani to Everyone:
+	Reacted to "I'd kindly ask som..." with 👍
+09:58:34 From Robin to Everyone:
+	Which book?
+09:58:42 From Alexandru Barbu to Everyone:
+	what was the name of the book?
+09:58:50 From Hreetam Paul to Everyone:
+	please state the book name once again
+	i missed i
+09:58:56 From Naveen to Everyone:
+	Reacted to "please state the boo..." with 👍
+09:59:05 From Rito Ghosh to Everyone:
+	Book: https://www.amazon.in/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/9355421982
+09:59:16 From Aditya to Everyone:
+	Reacted to "Book: https://www.am..." with 👍
+09:59:20 From Rito Ghosh to Everyone:
+	I don't recommend it now, because it uses TensorFLow.
+09:59:28 From Alexandru Barbu to Everyone:
+	Reacted to "Book: https://www.am..." with 👍
+09:59:28 From Robin to Everyone:
+	Sounds like a great strategy
+09:59:29 From Valerio to Everyone:
+	This is a great idea
+09:59:35 From Naveen to Everyone:
+	very good idea
+09:59:36 From Srivathsan M to Everyone:
+	Replying to "can anyone suggest m..."
+	
+	mine is srivat_07
+09:59:54 From Alexandru Barbu to Everyone:
+	this is great approach, same as Bezos does at its meetings, to make sure everyone read the prerequsites
+10:00:01 From Naveen to Everyone:
+	Reacted to "this is great approa..." with 👍
+10:00:28 From natethegreat to Everyone:
+	Replying to "can anyone suggest m..."
+	
+	natethegreat888, this is me on discord. 		however, I would check with santi for a study group on math. 		I think this is very important. 		If a meeting session is required for math, I will set up one if necessary based on feedback from the group. 		But yeah, let's utilize santi's group. 		I want to start this to keep myself motivated. :)
+10:00:31 From Hreetam Paul to Everyone:
+	https://github.com/yanshengjia/ml-road/blob/master/resources/Hands%20On%20Machine%20Learning%20with%20Scikit%20Learn%20and%20TensorFlow.pdf
+10:00:34 From Hreetam Paul to Everyone:
+	this is the book
+10:00:45 From Hreetam Paul to Everyone:
+	u can download it
+10:01:01 From Aditya to Everyone:
+	Reacted to "natethegreat888, thi..." with ❤️
+10:01:03 From Robin to Everyone:
+	Replying to "I don't recommend it..." 
+	
+	 What's wrong with TensorFlow?
+10:01:03 From Naveen to Everyone:
+	Mash can take the lead for the first one or two chapters :)
+10:01:31 From Nazari to Everyone:
+	great idea
+10:02:25 From Tropiques to Everyone:
+	Targeted and Practical. Please.
+10:03:28 From Hreetam Paul to Everyone:
+	i would love that approach
+	accountability would be nice
+10:03:42 From Tropiques to Everyone:
+	Got to go. Tks Santiago. 
+	
+	Jozef from Paris.
+10:04:07 From likhith to Everyone:
+	Reacted to "I don't recommend it..." with 👍
+10:05:11 From Alexandru Barbu to Everyone:
+	the Wiki is a great idea
+10:05:13 From natethegreat to Everyone:
+	I think there's a gitbook
+10:05:25 From natethegreat to Everyone:
+	a repo with gitbook
+10:05:33 From Vignesh to Everyone:
+	I remember Teams had a bot that would summarize the entire meeting at the end of a call. Wonder whether zoom has something similar
+10:05:37 From Robin to Everyone:
+	Reacted to I think there's a gi... with "👍"
+10:05:45 From Mash (Miami) to Everyone:
+	Reacted to "Mash can take the le..." with 😃
+10:06:02 From Peter Milford to Everyone:
+	Have to drop off. Hope you don't decide to spend the hour together reading.  Let us know how the new class design is on the discord
+10:07:42 From Sai Chaitanya Pachipulusu to Everyone:
+	Where can I find other similar study groups for other courses and books for deep learning/nlp?
+10:08:02 From Andres Castillo to Everyone:
+	I have to drop off, thanks Santiago for organizing and everyone for the discussion. I learned a lot! See you on discord
+10:08:13 From natethegreat to Everyone:
+	Where can I find other similar study groups for other courses and books for deep learning/nlp?	use this, I am new to ML/DL/NLP too
+10:08:14 From Menan Velayuthan to Everyone:
+	Reacted to "Where can I find oth..." with 👍
+10:08:24 From Menan Velayuthan to Everyone:
+	Removed a 👍 reaction from "Where can I find oth..."
+10:08:47 From natethegreat to Everyone:
+	we can ask santiago to set up study groups as channels
+10:09:14 From Srivathsan M to Everyone:
+	Replying to "we can ask santiago ..."
+	
+	This actually makes sense, best option
+10:09:28 From Naveen to Everyone:
+	Thanks Mash for stepping in, this will be exciting!
+10:09:30 From natethegreat to Everyone:
+	then we can use those rooms for different topics because his discord workspace is used for "AI from scratch", I assume you can learn from any levels
+10:12:07 From Naveen to Everyone:
+	A huge thanks to Santiago for organizing this study group!
+10:12:19 From Alexandru Barbu to Everyone:
+	thanks for putting it together!
+10:12:21 From Robin to Everyone:
+	Reacted to A huge thanks to San... with "😂"
+10:12:25 From Robin to Everyone:
+	Reacted to A huge thanks to San... with "👍"
+10:12:27 From Robin to Everyone:
+	Removed a 😂 reaction from "A huge thanks to San..."
+10:12:34 From Menan Velayuthan to Everyone:
+	Reacted to "A huge thanks to San..." with 👍
+10:12:43 From Yvonne Mbuvi to Everyone:
+	Reacted to "A huge thanks to San..." with 👍
+10:12:47 From Aditya to Everyone:
+	Thanks @Santiago Viquez for hosting this. And thanks @Mash (Miami) for your suggestions. Really love it!!
+10:12:52 From nface to Everyone:
+	Thanks Santiago
+10:12:57 From Jake Maymar to Everyone:
+	Yes - thank you for creating this group @Santiago Viquez
+10:12:58 From Mash (Miami) to Everyone:
+	Reacted to "Thanks @Santiago Viq..." with ❤️
+10:13:10 From Naveen to Everyone:
+	collective intelligence 🤝 individual ignorance :)
+10:13:16 From Sai Chaitanya Pachipulusu to Everyone:
+	Thanks Santiago!
+10:13:19 From Hreetam Paul to Everyone:
+	Thanks @Santiago Viquez for making this group and @Mash (Miami) to make it even better
+	Hope we make it a success
+10:13:28 From Menan Velayuthan to Everyone:
+	Thank @Santiago Viquez, I will try my best to help out. Excited to learn with everyone!
+10:13:42 From Srivathsan M to Everyone:
+	So the next week is still chapter 2 right?
+10:13:43 From Robin to Everyone:
+	Reacted to Thanks @Santiago Viq... with "❤️"
+10:13:46 From Menan Velayuthan to Everyone:
+	Reacted to "So the next week is ..." with 👍
+10:13:48 From Aditya to Everyone:
+	Reacted to "Thank @Santiago Viqu..." with ❤️
+10:13:53 From Hreetam Paul to Everyone:
+	Replying to "So the next week is ..."
+	
+	yes
+10:13:56 From imai to Everyone:
+	Replying to "So the next week is ..."
+	
+	yes
+10:13:57 From Robin to Everyone:
+	Reacted to So the next week is ... with "👍"
+10:13:58 From Mash (Miami) to Everyone:
+	Correct. Chapter 2 fully next week.
+10:14:01 From Michael Erasmus to Everyone:
+	This was great, thanks!
+10:14:02 From Srivathsan M to Everyone:
+	Replying to "So the next week is ..."
+	
+	awesome then
+10:14:02 From Menan Velayuthan to Everyone:
+	Reacted to "This was great, than..." with 👍
+10:14:05 From Mash (Miami) to Everyone:
+	Reacted to "So the next week is ..." with 👍
+10:14:06 From Menan Velayuthan to Everyone:
+	Reacted to "Correct. Chapter 2 f..." with 👍
+10:14:13 From Srivathsan M to Everyone:
+	Reacted to "Correct. Chapter 2 f..." with 👍
+10:14:19 From Naveen to Everyone:
+	@Mash (Miami) please share the homework for us in the discord group :)
