@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: argocd-bootstrap
+  name: argocd-self-manage
   namespace: argocd
 spec:
   project: default
@@ -9,11 +9,16 @@ spec:
     namespace: argocd
     server: https://kubernetes.default.svc
   source:
-    repoURL: https://github.com/vikramreddym/lab.git  # Replace with your Git repo
-    path: "devops engineering/argocd/argocd-self-manage/manifests"
-    targetRevision: HEAD
+    repoURL: https://argoproj.github.io/argo-helm
+    targetRevision: 7.7.4
+    chart: argo-cd
+    helm:
+      releaseName: my-argo-cd
+      valueFiles:
+        - values.yaml
   syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
     automated:
       prune: true
       selfHeal: true
-
