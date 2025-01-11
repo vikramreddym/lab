@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: argocd-self-manage
+  name: argocd-app
   namespace: argocd
 spec:
   project: default
@@ -13,9 +13,26 @@ spec:
     targetRevision: 7.7.4
     chart: argo-cd
     helm:
-      releaseName: my-argo-cd
-      valueFiles:
-        - values.yaml
+      releaseName: argo-cd
+      values: |
+        #redis-ha:
+        #  enabled: true
+
+        controller:
+          replicas: 1
+
+        server:
+          autoscaling:
+            enabled: true
+            minReplicas: 1
+
+        repoServer:
+          autoscaling:
+            enabled: true
+            minReplicas: 1
+
+        applicationSet:
+          replicas: 1
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
