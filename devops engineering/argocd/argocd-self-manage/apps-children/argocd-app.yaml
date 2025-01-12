@@ -10,29 +10,12 @@ spec:
     server: https://kubernetes.default.svc
   source:
     repoURL: https://argoproj.github.io/argo-helm
-    targetRevision: 7.7.15
+    targetRevision: 7.7.4
     chart: argo-cd
     helm:
       releaseName: argo-cd
-      values: |
-        #redis-ha:
-        #  enabled: true
-
-        controller:
-          replicas: 1
-
-        server:
-          autoscaling:
-            enabled: true
-            minReplicas: 1
-
-        repoServer:
-          autoscaling:
-            enabled: true
-            minReplicas: 1
-
-        applicationSet:
-          replicas: 1
+      valueFiles:
+        - values.yaml
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
